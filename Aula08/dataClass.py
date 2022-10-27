@@ -10,8 +10,9 @@ class InventoryItem:
     def total_cost(self) -> float:
         return self.unit_price * self.quantity_on_hand
 
-InventoryItem('a', .1, 1)
-        
+i= InventoryItem('a', 10, 10)
+print(i.total_cost())
+
 
 
 class InventoryItem:
@@ -26,14 +27,5 @@ class InventoryItem:
         return self.unit_price * self.quantity_on_hand
 
         
-InventoryItem('a', .1, 1)
-
-
-
-
-@dataclass
-class Node:
-    value: int
-
-
-Node(1)
+i= InventoryItem('a', 10, 5)
+print(i.total_cost())
